@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,14 +14,15 @@
     <link rel="stylesheet" href="/css/style.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/iconFonts.css" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <title>CBD</title>
   </head>
 
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="firstLevel">
+      <div class="firstLevel">
+        <header class="header">
           <nav class="header__menu">
             <div class="icon-menu">
               <span></span>
@@ -35,11 +37,13 @@
             </div>
           </nav>
           <div class="titleWebsite">CBD</div>
-          <div class="login"></div>
-          <div class="search"></div>
-          <div class="cart"></div>
-        </div>
-      </header>
+          <div class="functional">
+            <div class="login">login</div>
+            <div class="search icon-search">Search</div>
+            <div class="cart">Cart (0)</div>
+          </div>
+        </header>
+      </div>
       <div class="main">
         <div class="firstLevel">
           <p class="verticall">CBD Potion health</p>
@@ -49,7 +53,11 @@
                 <div class="title">Enhancing Life Excelling in Care</div>
                 <div class="sub-title">Choose Wisely. Choose CBD.</div>
                 <button class="btn">Start Shopping</button>
-                <div><a href="#allProduct"> See all products</a></div>
+                <div>
+                  <a href="#allProduct" class="icon-Arrow-rightA">
+                    See all products</a
+                  >
+                </div>
               </section>
               <section class="logos">
                 <div class="holderLogos">
@@ -115,11 +123,101 @@
                       </div>
                       <div class="shopPrice">
                         <div class="price">$49.99 USD</div>
-                        <div class="shopPrice-btn btn">Shop</div>
+                        <button class="btn">Shop</button>
                       </div>
-                      <div class="cart-desc two"></div>
-                      <div class="cart-desc three"></div>
+                      <div class="cart-desc two">
+                        <div class="ratings">
+                          <img src="images/stars.png" alt="" />
+                        </div>
+                        <div class="cart-desc__title">
+                          Black ICE CBD Muscle Rub 200 mg
+                        </div>
+                        <div class="cart-desc__img">
+                          <img src="images/products/box.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="shopPrice">
+                        <div class="price">$49.99 USD</div>
+                        <button class="btn">Shop</button>
+                      </div>
+                      <div class="cart-desc three">
+                        <div class="ratings">
+                          <img src="images/stars.png" alt="" />
+                        </div>
+                        <div class="cart-desc__title">
+                          CBD+Curcumin Coffee 750 mg
+                        </div>
+                        <div class="cart-desc__img">
+                          <img src="images/products/package.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="shopPrice">
+                        <div class="price">$79.99 USD</div>
+                        <button class="btn">Shop</button>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </section>
+              <section class="faq">
+                <div class="thirdLevel">
+                  <div class="faq-title">Frequently asked questions</div>
+                  <button class="accordion">What is Cannabidiol (CBD)?</button>
+                  <div class="panel">
+                    <p>
+                      Because CBD from hemp has no psychoactive effects, the
+                      purchase, sales, or possession of hemp CBD products are
+                      completely legal in all 50 States.
+                    </p>
+                  </div>
+                  <button class="accordion">
+                    Is Hemp-Derived Cannabidiol (CBD) Legal?
+                  </button>
+                  <div class="panel">
+                    <p>
+                      Because CBD from hemp has no psychoactive effects, the
+                      purchase, sales, or possession of hemp CBD products are
+                      completely legal in all 50 States.
+                    </p>
+                  </div>
+                  <button class="accordion">
+                    Are there any negative side effects?
+                  </button>
+                  <div class="panel">
+                    <p>
+                      Because CBD from hemp has no psychoactive effects, the
+                      purchase, sales, or possession of hemp CBD products are
+                      completely legal in all 50 States.
+                    </p>
+                  </div>
+                  <button class="accordion">
+                    Do you offer a return policy?
+                  </button>
+                  <div class="panel">
+                    <p>
+                      Because CBD from hemp has no psychoactive effects, the
+                      purchase, sales, or possession of hemp CBD products are
+                      completely legal in all 50 States.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section class="everyDay">
+                <div class="firstLevel">
+                  <div class="verticall">CBD every day</div>
+                  <div class="thirdLevel">
+                    <div class="rating">
+                      <img src="images/stars.png" alt="" />
+                    </div>
+                    <div class="faq-text">
+                      I have tried another product after using this one
+                      successfully, and I am Back for good! The flavour, the
+                      lightness of the oil and the health benefits I have gotten
+                      with this oil are amazing!
+                    </div>
+                    <div class="faq-author">Mark J.</div>
+                    <div class="faq-arrod icon-Arrow-left"></div>
+                    <div class="faq-arrod icon-Arrow-rightB"></div>
                   </div>
                 </div>
               </section>
@@ -128,10 +226,43 @@
         </div>
       </div>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="thirdLevel">
+          <div class="footer-title">CBD</div>
+          <div class="footer-row__columns">
+            <div class="columnFirst">
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+              <p>Return Policy</p>
+            </div>
+            <div class="columnSecond">
+              <div class="socialLinks">
+                <a href="https://www.facebook.com/" class="icon-Facebook"></a>
+                <a href="https://twitter.com/" class="icon-Twitter"></a>
+                <a href="https://www.youtube.com/" class="icon-YouTube"></a>
+              </div>
+              <div class="footer-subTitle">Subscribe to Newsletter</div>
+              <input
+                type="text"
+                class="email"
+                placeholder="Email"
+                name="email"
+                required
+              />
+              <button class="email icon-Arrow-rightB"></button>
+              <div class="copyright">© 2018. CbD health.</div>
+            </div>
+            <div class="columnThird">
+              <p>SHIPPING INFO</p>
+              <p>RETURNS / EXCHANGES</p>
+              <p>CONTACT</p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

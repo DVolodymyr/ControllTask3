@@ -32,7 +32,11 @@
   content: "\e900";
 }
 
-.icon-Arrow-right:before {
+.icon-Arrow-rightB:before {
+  content: "\e901";
+}
+
+.icon-Arrow-rightA::after {
   content: "\e901";
 }
 

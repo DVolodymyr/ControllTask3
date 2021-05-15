@@ -1,0 +1,61 @@
+@import 'fonts.scss';
+
+.header {
+  position       : absolute;
+  width          : 100%;
+  z-index        : 50;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.menu {
+  &__list {
+    display       : flex;
+    font-family   : $Os;
+    font-size     : 16px;
+    font-weight   : 400;
+    line-height   : 40px;
+    text-align    : left;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    margin-left   : 60px;
+  }
+
+  &__item {
+    color       : #ffffff;
+    margin-right: 48px;
+  }
+
+
+
+}
+
+.titleWebsite {
+  color         : #ffffff;
+  font-family   : $Os;
+  font-size     : 30px;
+  font-weight   : 400;
+  line-height   : 55px;
+  text-align    : left;
+  text-transform: uppercase;
+}
+
+.functional {
+  display       : flex;
+  font-family   : $Os;
+  font-size     : 16px;
+  font-weight   : 400;
+  line-height   : 23px;
+  text-align    : left;
+  text-transform: uppercase;
+  letter-spacing: 0.96px;
+
+  .login {}
+
+  .search {}
+
+  .icon-search {}
+
+  .cart {}
+}
