@@ -8,12 +8,25 @@
 
 .firstLevel {
   max-width: 1920px;
+  position : relative;
+  margin   : 0 auto;
 }
 
 .secondLevel {
   max-width: 1820px;
+  margin   : 0 auto;
 }
 
 .thirdLevel {
   max-width: 1175px;
+}
+
+hr {
+  width           : 1920px;
+  height          : 1px;
+  background-color: #ffffff;
+  opacity         : 0.4;
+  margin-top      : 80px;
+  position        : absolute;
+  z-index         : 50;
 }

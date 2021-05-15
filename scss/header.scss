@@ -9,6 +9,8 @@
   align-items    : center;
 }
 
+
+
 .menu {
   &__list {
     display       : flex;
@@ -42,6 +44,7 @@
 }
 
 .functional {
+  color         : #ffffff;
   display       : flex;
   font-family   : $Os;
   font-size     : 16px;
@@ -50,12 +53,14 @@
   text-align    : left;
   text-transform: uppercase;
   letter-spacing: 0.96px;
+  margin-right  : 35px;
 
-  .login {}
+}
 
-  .search {}
+.login {
+  margin-right: 100px;
+}
 
-  .icon-search {}
-
-  .cart {}
+.cart {
+  margin-left: 69px;
 }

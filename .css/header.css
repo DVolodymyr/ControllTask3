@@ -44,6 +44,7 @@
 }
 
 .functional {
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,4 +55,13 @@
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.96px;
+  margin-right: 35px;
+}
+
+.login {
+  margin-right: 100px;
+}
+
+.cart {
+  margin-left: 69px;
 }
