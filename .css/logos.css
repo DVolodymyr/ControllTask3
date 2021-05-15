@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+.logos-container {
+  max-width: 1175px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logos {
+  text-align: center;
+}
+
+.holderLogos {
+  margin: 100px 0;
+}
+
+.titleLogos {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  z-index: 2;
+  color: #1c1c1b;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+.imgLogos {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  z-index: 2;
+}

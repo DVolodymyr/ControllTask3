@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 *,
 *::before,
 *::after {
@@ -59,6 +60,62 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #6e774a;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.96px;
+  margin-left: 60px;
+}
+.menu__item {
+  color: #ffffff;
+  margin-right: 48px;
+}
+
+.titleWebsite {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 55px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.functional {
+  color: #ffffff;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.96px;
+  margin-right: 35px;
+}
+
+.login {
+  margin-right: 100px;
+}
+
+.cart {
+  margin-left: 69px;
 }
 
 .mainPage {
@@ -131,60 +188,40 @@ body {
   height: 10px;
 }
 
-.header {
+.logos-container {
+  max-width: 1175px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logos {
+  text-align: center;
+}
+
+.holderLogos {
+  margin: 100px 0;
+}
+
+.titleLogos {
   position: absolute;
-  width: 100%;
-  z-index: 50;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu__list {
-  display: flex;
+  top: 30%;
+  left: 38%;
+  z-index: 2;
+  color: #1c1c1b;
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 40px;
-  text-align: left;
+  line-height: 75px;
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.96px;
-  margin-left: 60px;
-}
-.menu__item {
-  color: #ffffff;
-  margin-right: 48px;
+  letter-spacing: 4.8px;
 }
 
-.titleWebsite {
-  color: #ffffff;
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 55px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.functional {
-  color: #ffffff;
-  display: flex;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 0.96px;
-  margin-right: 35px;
-}
-
-.login {
-  margin-right: 100px;
-}
-
-.cart {
-  margin-left: 69px;
+.imgLogos {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  z-index: 2;
 }
 
 .firstLevel {
