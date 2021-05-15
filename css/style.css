@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 *,
 *::before,
 *::after {
@@ -224,6 +225,49 @@ body {
   z-index: 2;
 }
 
+.tabs-container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+.tabs {
+  margin-bottom: 150px;
+}
+.tabs__items {
+  display: flex;
+}
+.tabs__item {
+  flex: 0 1 33.333%;
+  color: #1c1c1b;
+  height: 25px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.tabs__block {
+  position: relative;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  display: none;
+  display: flex;
+}
+.tabs__block::before {
+  content: "";
+  height: 50px;
+  width: 33.333%;
+  position: absolute;
+  top: -50px;
+}
+.tabs__block:target {
+  display: block;
+}
 .firstLevel {
   max-width: 1920px;
   position: relative;
