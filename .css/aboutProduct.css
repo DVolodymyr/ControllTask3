@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 @font-face {
   font-family: ProximaNova;
   src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
@@ -51,7 +52,7 @@
           flex: 0 1 25%;
   color: #1c1c1b;
   height: 80px;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 25px;
   font-weight: 700;
   line-height: 75px;
@@ -106,7 +107,7 @@
 
 .tabs__block-title {
   color: #000000;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
@@ -118,7 +119,7 @@
 
 .tabs__block-text {
   color: #6e774a;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;

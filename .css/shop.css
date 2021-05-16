@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 @font-face {
   font-family: ProximaNova;
   src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
@@ -29,19 +30,26 @@
 
 .shop-title {
   color: #1c1c1b;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 6px;
+  margin: 80px auto;
 }
 
 .shop-carts {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 }
 
 .cart-desc {
@@ -58,21 +66,43 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 613px;
-  height: 430px;
+  height: 432px;
   border: 1px solid #ced6af;
   background-color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+  margin-right: 20px;
 }
 
 .cart-desc__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1c1c1b;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2.7px;
+  margin-top: 40px;
+}
+
+.cart-desc__title img {
+  width: 96px;
+  height: 15px;
 }
 
 .shopPrice {
@@ -89,11 +119,13 @@
   height: 75px;
   border: 1px solid #e1e1e1;
   background-color: #f1f1f1;
+  margin-right: 20px;
+  margin-bottom: 120px;
 }
 
 .shopPrice__price {
   color: #1c1c1b;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 75px;
@@ -114,4 +146,17 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  padding-right: 50px;
+  position: relative;
+}
+
+.shopPrice__btn::before {
+  content: '';
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 40px;
 }
