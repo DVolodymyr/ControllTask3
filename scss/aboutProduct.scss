@@ -7,9 +7,8 @@
 
 .tabs {
   &__items {
-    display      : flex;
-    position     : relative;
-    margin-bottom: 80px;
+    display : flex;
+    position: relative;
   }
 
   &__items::before {
@@ -27,10 +26,10 @@
   &__item {
     flex          : 0 1 25%;
     color         : #1c1c1b;
-    height        : 25px;
-    font-family   : $Os;
-    font-size     : 30px;
-    font-weight   : 400;
+    height        : 80px;
+    font-family   : $Pn;
+    font-size     : 25px;
+    font-weight   : 700;
     line-height   : 75px;
     text-align    : center;
     text-transform: uppercase;
@@ -39,10 +38,12 @@
     margin-bottom : 50px;
   }
 
-  &__item:hover {
-    border-bottom: 2px #1c1c1b;
-    width        : 228px;
+  &__item:active {
+    text-shadow: 1px 1px 2px #6e774a;
+  }
 
+  &__item:hover {
+    border-bottom: 2px solid #1c1c1b;
   }
 
   &__skeleton {
@@ -51,7 +52,7 @@
   }
 
   &__block-desc {
-    margin-top  : 60px;
+    margin-top  : 40px;
     margin-right: 192px;
     flex        : 0 1 50%;
   }
@@ -77,30 +78,30 @@
 
   &__block-title {
     color         : #000000;
-    font-family   : $Os;
+    font-family   : $Pn;
     font-size     : 24px;
-    font-weight   : 400;
+    font-weight   : 700;
     line-height   : 40px;
     text-align    : left;
     text-transform: uppercase;
     letter-spacing: 4.8px;
-    margin-bottom : 50px;
+    margin-bottom : 35px;
   }
 
 
 
   &__block-text {
     color         : #6e774a;
-    font-family   : $Os;
+    font-family   : $Pn;
     font-size     : 18px;
     font-weight   : 300;
-    line-height   : 40px;
-    text-align    : justify;
+    line-height   : 30px;
+    text-align    : left;
     letter-spacing: 0.72px;
   }
 
   &__block-text p {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   &__block-img {

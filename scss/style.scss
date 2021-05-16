@@ -6,20 +6,18 @@
 @import "mainPage.scss";
 @import "logos.scss";
 @import "aboutProduct.scss";
+@import "shop.scss";
 @import "footer.scss";
 
 .firstLevel {
-  max-width: 1920px;
-  position : relative;
-  margin   : 0 auto;
+  position: relative;
+  margin  : 0 auto;
+}
 
-  .secondLevel {
-    max-width: 1820px;
-    margin   : 0 auto;
+.secondLevel {
+  margin: 0 auto;
+}
 
-    .thirdLevel {
-      max-width: 1175px;
-      margin   : 0 auto;
-    }
-  }
+.thirdLevel {
+  margin: 0 auto;
 }

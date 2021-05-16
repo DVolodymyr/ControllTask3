@@ -21,8 +21,8 @@
 
   <body>
     <div class="wrapper">
-      <div class="firstLevel">
-        <header class="header">
+      <header class="header">
+          <div class="header-container">
           <nav class="header__menu">
             <div class="icon-menu">
               <span></span>
@@ -42,22 +42,21 @@
             <div class="search icon-search">Search</div>
             <div class="cart">Cart (0)</div>
           </div>
+          </div>
         </header>
-      </div>
-      <hr />
-      <div class="main">
+      <main class="main">
         <div class="firstLevel">
-          <!-- <p class="verticall">CBD Potion health</p> -->
           <div class="secondLevel">
             <div class="main-content">
               <section class="mainPage">
                 <div class="mainPage-container">
-                  <div class="title">
+                            <p class="verticall">CBD Potion health</p>
+                 <div class="title">
                     Enhancing Life<br />
                     Excelling in Care
                   </div>
                   <div class="sub-title">Choose Wisely. Choose CBD.</div>
-                  <div class="startShoping btn">Start Shopping</div>
+                  <div class="startShoping btn"><a href="#shop">Start Shopping</a></div>
                   <div>
                     <a href="#allProduct" class="seeAll icon-Arrow-rightA">
                       See all products</a
@@ -154,16 +153,16 @@
                       </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </section>
               <section class="shop-slider">
-                <div class="firstLevel">
-                  <div class="shop">
+                <div class="firstLevel-shop">
+                  <div class="shop" id="shop">
                     <div class="shop-title">CBD Featured Products</div>
                     <div class="shop-carts">
+                      <div class="shop-carts__body">
                       <div class="cart-desc one">
-                        <div class="ratings">
+                        <div class="cart-desc__ratings">
                           <img src="images/stars.png" alt="" />
                         </div>
                         <div class="cart-desc__title">
@@ -174,39 +173,11 @@
                         </div>
                       </div>
                       <div class="shopPrice">
-                        <div class="price">$49.99 USD</div>
-                        <button class="btn">Shop</button>
+                        <div class="shopPrice__price">$49.99 USD</div>
+                        <button class="shopPrice__btn btn">Shop</button>
                       </div>
-                      <div class="cart-desc two">
-                        <div class="ratings">
-                          <img src="images/stars.png" alt="" />
-                        </div>
-                        <div class="cart-desc__title">
-                          Black ICE CBD Muscle Rub 200 mg
-                        </div>
-                        <div class="cart-desc__img">
-                          <img src="images/products/box.png" alt="" />
-                        </div>
                       </div>
-                      <div class="shopPrice">
-                        <div class="price">$49.99 USD</div>
-                        <button class="btn">Shop</button>
-                      </div>
-                      <div class="cart-desc three">
-                        <div class="ratings">
-                          <img src="images/stars.png" alt="" />
-                        </div>
-                        <div class="cart-desc__title">
-                          CBD+Curcumin Coffee 750 mg
-                        </div>
-                        <div class="cart-desc__img">
-                          <img src="images/products/package.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="shopPrice">
-                        <div class="price">$79.99 USD</div>
-                        <button class="btn">Shop</button>
-                      </div>
+
                     </div>
                   </div>
                 </div>

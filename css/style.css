@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 *,
 *::before,
 *::after {
@@ -50,11 +44,53 @@ body {
   min-height: 100%;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .btn {
   width: 188px;
   height: 75px;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 230px;
@@ -63,18 +99,60 @@ body {
   background-color: #6e774a;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .header {
+  background: url(../images/header-shadow.png) no-repeat center;
+  background-size: cover;
   position: absolute;
   width: 100%;
+  height: 80px;
   z-index: 50;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.4;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.header-container {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1 1 100%;
 }
 
 .menu__list {
   display: flex;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
@@ -82,15 +160,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.96px;
   margin-left: 60px;
+  flex: 0 1 100%;
 }
 .menu__item {
   color: #ffffff;
   margin-right: 48px;
+  flex: 0 1 25%;
 }
 
 .titleWebsite {
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 55px;
@@ -101,7 +181,7 @@ body {
 .functional {
   color: #ffffff;
   display: flex;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
@@ -111,14 +191,35 @@ body {
   margin-right: 35px;
 }
 
-.login {
-  margin-right: 100px;
+.functional > div {
+  margin-left: 70px;
 }
 
-.cart {
-  margin-left: 69px;
+.icon-search::before {
+  margin-right: 11px;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .mainPage {
   background: url(../images/main_bg.png) no-repeat center;
   background-size: cover;
@@ -134,7 +235,7 @@ body {
 .title {
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   color: #f7f8f3;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 55px;
   font-weight: 400;
   line-height: 75px;
@@ -146,7 +247,7 @@ body {
 
 .sub-title {
   color: #f7f8f3;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 75px;
@@ -156,13 +257,13 @@ body {
 }
 
 .startShoping {
-  width: 270px;
+  width: 295px;
   height: 70px;
-  padding-right: 50px;
+  padding-right: 75px;
   background-color: transparent;
   border: 1px solid #9db892;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 230px;
@@ -172,6 +273,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
+}
+
+.startShoping a {
+  color: #ffffff;
 }
 
 .startShoping::before {
@@ -181,13 +287,13 @@ body {
   height: 2px;
   background-color: #ffffff;
   position: absolute;
-  top: 35px;
+  top: 32px;
   right: 30px;
 }
 
 .seeAll {
   color: #f7f8f3;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 75px;
@@ -201,6 +307,27 @@ body {
   height: 10px;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .logos-container {
   max-width: 1175px;
   margin: 0 auto;
@@ -221,7 +348,7 @@ body {
   left: 38%;
   z-index: 2;
   color: #1c1c1b;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 75px;
@@ -237,6 +364,27 @@ body {
   z-index: 2;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .tabs-container {
   max-width: 1175px;
   margin: 0 auto;
@@ -245,7 +393,6 @@ body {
 .tabs__items {
   display: flex;
   position: relative;
-  margin-bottom: 80px;
 }
 .tabs__items::before {
   content: "";
@@ -260,10 +407,10 @@ body {
 .tabs__item {
   flex: 0 1 25%;
   color: #1c1c1b;
-  height: 25px;
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
+  height: 80px;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
@@ -271,16 +418,18 @@ body {
   cursor: pointer;
   margin-bottom: 50px;
 }
+.tabs__item:active {
+  text-shadow: 1px 1px 2px #6e774a;
+}
 .tabs__item:hover {
-  border-bottom: 2px #1c1c1b;
-  width: 228px;
+  border-bottom: 2px solid #1c1c1b;
 }
 .tabs__skeleton {
   display: flex;
   margin-left: 15px;
 }
 .tabs__block-desc {
-  margin-top: 60px;
+  margin-top: 40px;
   margin-right: 192px;
   flex: 0 1 50%;
 }
@@ -302,26 +451,26 @@ body {
 }
 .tabs__block-title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 40px;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 4.8px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .tabs__block-text {
   color: #6e774a;
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 40px;
-  text-align: justify;
+  line-height: 30px;
+  text-align: left;
   letter-spacing: 0.72px;
 }
 .tabs__block-text p {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .tabs__block-img {
   flex: 1 1 50%;
@@ -330,17 +479,105 @@ body {
   margin: 50px 0;
 }
 
-.firstLevel {
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+.firstLevel-shop {
   max-width: 1920px;
+  margin: 0 auto;
+}
+
+.shop-title {
+  color: #1c1c1b;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.shop-carts {
+  display: inline-flex;
+}
+
+.cart-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 613px;
+  height: 430px;
+  border: 1px solid #ced6af;
+  background-color: #ffffff;
+}
+.cart-desc__title {
+  color: #1c1c1b;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+
+.shopPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 613px;
+  height: 75px;
+  border: 1px solid #e1e1e1;
+  background-color: #f1f1f1;
+}
+.shopPrice__price {
+  color: #1c1c1b;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin-left: 30px;
+}
+.shopPrice__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.firstLevel {
   position: relative;
   margin: 0 auto;
 }
-.firstLevel .secondLevel {
-  max-width: 1820px;
+
+.secondLevel {
   margin: 0 auto;
 }
-.firstLevel .secondLevel .thirdLevel {
-  max-width: 1175px;
+
+.thirdLevel {
   margin: 0 auto;
 }
 
