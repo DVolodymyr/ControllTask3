@@ -32,31 +32,43 @@
   line-height: 75px;
   text-align: right;
   letter-spacing: 6.72px;
+  margin-bottom: 56px;
 }
 
 .startShoping {
   width: 270px;
   height: 70px;
+  padding-right: 50px;
   background-color: transparent;
   border: 1px solid #9db892;
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 230px;
   text-align: right;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.startShoping::before {
+  content: '';
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 35px;
+  right: 30px;
 }
 
 .seeAll {

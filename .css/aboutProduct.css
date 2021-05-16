@@ -4,20 +4,29 @@
   margin: 0 auto;
 }
 
-.tabs {
-  margin-bottom: 150px;
-}
-
 .tabs__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.tabs__items::before {
+  content: '';
+  display: block;
+  width: 970px;
+  height: 2px;
+  background-color: #ced6af;
+  position: absolute;
+  top: 80px;
+  left: 30px;
 }
 
 .tabs__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.333%;
-          flex: 0 1 33.333%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
   color: #1c1c1b;
   height: 25px;
   font-family: "Oswald", sans-serif;
@@ -31,15 +40,36 @@
   margin-bottom: 50px;
 }
 
+.tabs__item:hover {
+  border-bottom: 2px #1c1c1b;
+  width: 228px;
+}
+
+.tabs__skeleton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+}
+
+.tabs__block-desc {
+  margin-top: 60px;
+  margin-right: 192px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
 .tabs__block {
   position: relative;
   padding: 20px;
   font-size: 18px;
   line-height: 24px;
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.tabs__block.active {
+  display: block;
 }
 
 .tabs__block::before {
@@ -47,9 +77,40 @@
   height: 50px;
   width: 33.333%;
   position: absolute;
-  top: -50px;
 }
 
-.tabs__block:target {
-  display: block;
+.tabs__block-title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  margin-bottom: 50px;
+}
+
+.tabs__block-text {
+  color: #6e774a;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: justify;
+  letter-spacing: 0.72px;
+}
+
+.tabs__block-text p {
+  margin-bottom: 60px;
+}
+
+.tabs__block-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.tabs__block-img img:nth-child(even) {
+  margin: 50px 0;
 }

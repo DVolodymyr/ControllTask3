@@ -6,15 +6,26 @@
 }
 
 .tabs {
-  margin-bottom: 150px;
-
-
   &__items {
-    display: flex;
+    display      : flex;
+    position     : relative;
+    margin-bottom: 80px;
+  }
+
+  &__items::before {
+    content         : '';
+    display         : block;
+    width           : 970px;
+    height          : 2px;
+    background-color: #ced6af;
+    position        : absolute;
+    top             : 80px;
+    left            : 30px;
+
   }
 
   &__item {
-    flex          : 0 1 33.333%;
+    flex          : 0 1 25%;
     color         : #1c1c1b;
     height        : 25px;
     font-family   : $Os;
@@ -28,7 +39,22 @@
     margin-bottom : 50px;
   }
 
-  &__body {}
+  &__item:hover {
+    border-bottom: 2px #1c1c1b;
+    width        : 228px;
+
+  }
+
+  &__skeleton {
+    display    : flex;
+    margin-left: 15px;
+  }
+
+  &__block-desc {
+    margin-top  : 60px;
+    margin-right: 192px;
+    flex        : 0 1 50%;
+  }
 
   &__block {
     position   : relative;
@@ -36,7 +62,10 @@
     font-size  : 18px;
     line-height: 24px;
     display    : none;
-    display    : flex;
+  }
+
+  &__block.active {
+    display: block;
   }
 
   &__block::before {
@@ -44,16 +73,41 @@
     height  : 50px;
     width   : 33.333%;
     position: absolute;
-    top     : -50px;
   }
 
-  &__block:target {
-    display: block;
+  &__block-title {
+    color         : #000000;
+    font-family   : $Os;
+    font-size     : 24px;
+    font-weight   : 400;
+    line-height   : 40px;
+    text-align    : left;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    margin-bottom : 50px;
   }
 
-  &__block-title {}
 
-  &__block-text {}
 
-  &__block-img {}
+  &__block-text {
+    color         : #6e774a;
+    font-family   : $Os;
+    font-size     : 18px;
+    font-weight   : 300;
+    line-height   : 40px;
+    text-align    : justify;
+    letter-spacing: 0.72px;
+  }
+
+  &__block-text p {
+    margin-bottom: 60px;
+  }
+
+  &__block-img {
+    flex: 1 1 50%;
+  }
+
+  &__block-img img:nth-child(even) {
+    margin: 50px 0;
+  }
 }
