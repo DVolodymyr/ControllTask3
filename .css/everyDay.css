@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 @font-face {
   font-family: ProximaNova;
@@ -24,12 +23,62 @@
   font-style: normal;
 }
 
-.footer-container {
+.everyDay {
+  background: url(../images/cbd_every_day.png) no-repeat center;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+.everyDay-container {
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.copyright {
+.everyDay-container__content {
+  min-width: 1175px;
+  margin: 0 auto;
+}
+
+.rating {
+  padding-top: 265px;
+  margin-bottom: 40px;
+}
+
+.faq-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 4.4px;
+}
+
+.faq-author {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  position: relative;
+  margin-bottom: 225px;
+}
+
+.faq-author::before {
+  content: '';
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.faq-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,15 +88,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Style for "© 2018. Cb" */
-  color: #6e774a;
-  font-family: "Oswald", sans-serif;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3.08px;
-  margin-top: 60px;
-  padding-bottom: 60px;
+}
+
+.faq-arrows .icon-Arrow-left {
+  display: block;
+  border: 1px solid #ffffff;
+  padding: 45px 40px 40px 40px;
+  border-bottom: none;
+}
+
+.faq-arrows .icon-Arrow-rightB {
+  display: block;
+  border: 1px solid #ffffff;
+  padding: 45px 40px 40px 40px;
+  border-bottom: none;
 }

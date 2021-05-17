@@ -1,0 +1,160 @@
+@import 'fonts.scss';
+
+.social-container {
+  max-width: 1175px;
+  margin   : 0 auto;
+}
+
+.social-title {
+  color         : #6e774a;
+  font-family   : $Os;
+  font-size     : 60px;
+  font-weight   : 400;
+  line-height   : 55px;
+  text-align    : center;
+  text-transform: uppercase;
+  margin-top    : 175px;
+  margin-bottom : 65px;
+  position      : relative;
+}
+
+.social-title::before {
+  content         : '';
+  display         : block;
+  width           : 371px;
+  height          : 2px;
+  background-color: #6e774a;
+  position        : absolute;
+  top             : 50%;
+  left            : 0;
+}
+
+.social-title::after {
+  content         : '';
+  display         : block;
+  width           : 371px;
+  height          : 2px;
+  background-color: #6e774a;
+  position        : absolute;
+  top             : 50%;
+  right           : 0;
+}
+
+.social-row__columns {
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+  flex           : 1 1 100%;
+}
+
+.columnPolicy {
+  color         : #6e774a;
+  font-family   : $Os;
+  font-size     : 14px;
+  font-weight   : 300;
+  line-height   : 40px;
+  text-align    : center;
+  text-transform: uppercase;
+  letter-spacing: 3.92px;
+  flex          : 1 1 33.333%;
+}
+
+.columnSocial {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  flex           : 1 1 33.333%;
+}
+
+.icon-Facebook,
+.icon-Twitter,
+.icon-YouTube {
+  color: #6e774a;
+}
+
+.icon-Twitter {
+  margin: 0 60px;
+}
+
+.verticallLine {
+  display         : block;
+  width           : 2px;
+  height          : 55px;
+  background-color: #6e774a;
+  margin-top      : 40px;
+  margin-bottom   : 30px;
+}
+
+.social-subTitle {
+  color         : #1c1c1b;
+  font-family   : $Os;
+  font-size     : 18px;
+  font-weight   : 400;
+  line-height   : 75px;
+  text-align    : center;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+
+.form {
+  width      : 370px;
+  display    : flex;
+  align-items: center;
+  border     : 2px solid #ced6af;
+}
+
+.email {
+  width           : 100%;
+  display         : inline-block;
+  text-align      : center;
+  font-family     : $Os;
+  font-size       : 14px;
+  font-weight     : 300;
+  color           : #6e774a;
+  background-color: transparent;
+  font-size       : 16px;
+  font-weight     : 300;
+  line-height     : 75px;
+  text-align      : left;
+  letter-spacing  : 4.48px;
+  padding-left    : 33px;
+}
+
+.EmailBtn {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  box-sizing      : border-box;
+  width           : 88px;
+  height          : 62px;
+  background-color: transparent;
+  color           : #6e774a;
+  font-weight     : 300;
+  text-align      : center;
+  padding         : 0 50px 0 60px;
+  position        : relative;
+}
+
+.EmailBtn::after {
+  content         : '';
+  display         : block;
+  position        : absolute;
+  width           : 2px;
+  height          : 50px;
+  background-color: #ced6af;
+  top             : 5px;
+  left            : 0;
+}
+
+.columnFeedBack {
+  color         : #6e774a;
+  font-family   : $Os;
+  font-size     : 14px;
+  font-weight   : 300;
+  line-height   : 40px;
+  text-align    : center;
+  text-transform: uppercase;
+  letter-spacing: 3.92px;
+  flex          : 1 1 33.333%;
+}

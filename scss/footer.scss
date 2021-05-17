@@ -1,0 +1,23 @@
+@import 'fonts.scss';
+
+.footer-container {
+  max-width: 1920px;
+  margin   : 0 auto;
+}
+
+.copyright {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  /* Style for "© 2018. Cb" */
+  color          : #6e774a;
+  font-family    : $Os;
+  font-size      : 11px;
+  font-weight    : 300;
+  line-height    : 40px;
+  text-align     : center;
+  text-transform : uppercase;
+  letter-spacing : 3.08px;
+  margin-top     : 60px;
+  padding-bottom : 60px;
+}

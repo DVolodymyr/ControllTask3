@@ -28,6 +28,10 @@
   margin: 0 auto;
 }
 
+.faq-container:last-child {
+  margin-bottom: 180px;
+}
+
 .faq-title {
   color: #1c1c1b;
   font-family: "Oswald", sans-serif;
