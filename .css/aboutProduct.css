@@ -42,7 +42,7 @@
   height: 2px;
   background-color: #ced6af;
   position: absolute;
-  top: 80px;
+  top: 78px;
   left: 30px;
 }
 
@@ -53,14 +53,14 @@
   color: #1c1c1b;
   height: 80px;
   font-family: "Oswald", sans-serif;
-  font-size: 25px;
+  font-size: calc(15px + 10 * ((100vw - 320px) / 960));
   font-weight: 700;
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 6px;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin: 0 20px 50px 20px;
 }
 
 .tabs__item:active {
@@ -69,6 +69,7 @@
 
 .tabs__item:hover {
   border-bottom: 2px solid #1c1c1b;
+  z-index: 5;
 }
 
 .tabs__skeleton {
