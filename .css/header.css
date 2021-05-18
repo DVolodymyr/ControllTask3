@@ -76,7 +76,6 @@
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.96px;
-  margin-left: 60px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
@@ -102,21 +101,28 @@
 
 .functional {
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.96px;
-  margin-right: 35px;
 }
 
 .functional > div {
-  margin-left: 70px;
+  padding: 30px 35px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  height: 80px;
 }
 
 .icon-search::before {

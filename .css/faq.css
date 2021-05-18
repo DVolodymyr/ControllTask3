@@ -63,6 +63,7 @@
   background-color: transparent;
   background-color: #f7f8f3;
   position: relative;
+  padding: 0 15px;
 }
 
 .accordion::before {
@@ -99,4 +100,5 @@
   line-height: 40px;
   text-align: left;
   letter-spacing: 0.72px;
+  padding: 0 15px;
 }

@@ -1,20 +1,28 @@
 @import 'fonts.scss';
+@import '_mixins.scss';
 
 .everyDay {
   background     : url(../images/cbd_every_day.png) no-repeat center;
   height         : 100%;
   background-size: cover;
-  text-align     : center;
   color          : #ffffff;
+}
+
+.externalContainerED {
+  max-width: 1920px;
+  margin   : 0 auto;
+
 }
 
 .everyDay-container {
   max-width: 1920px;
   margin   : 0 auto;
+  position : relative;
 
   &__content {
-    min-width: 1175px;
-    margin   : 0 auto;
+    min-width : 1175px;
+    margin    : 0 auto;
+    text-align: center;
   }
 }
 
@@ -28,7 +36,6 @@
   font-size     : 22px;
   font-weight   : 300;
   line-height   : 40px;
-  text-align    : center;
   letter-spacing: 4.4px;
 }
 
@@ -37,7 +44,6 @@
   font-size     : 24px;
   font-weight   : 400;
   line-height   : 75px;
-  text-align    : center;
   text-transform: uppercase;
   letter-spacing: 4.8px;
   position      : relative;
@@ -73,4 +79,21 @@
     padding      : 45px 40px 40px 40px;
     border-bottom: none;
   }
+}
+
+.verticallED {
+  position : absolute;
+  bottom   : 100px;
+  left     : 60px;
+  transform: rotate(90deg);
+
+  color      : #ffffff;
+  font-family: $Os;
+  @include adaptiv-font(26, 16);
+  font-weight   : 300;
+  line-height   : 55px;
+  text-align    : left;
+  text-transform: uppercase;
+  letter-spacing: 2.08px;
+
 }

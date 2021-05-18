@@ -27,18 +27,24 @@
   background: url(../images/cbd_every_day.png) no-repeat center;
   height: 100%;
   background-size: cover;
-  text-align: center;
   color: #ffffff;
+}
+
+.externalContainerED {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .everyDay-container {
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
 }
 
 .everyDay-container__content {
   min-width: 1175px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .rating {
@@ -51,7 +57,6 @@
   font-size: 22px;
   font-weight: 300;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 4.4px;
 }
 
@@ -60,7 +65,6 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 75px;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 4.8px;
   position: relative;
@@ -102,4 +106,20 @@
   border: 1px solid #ffffff;
   padding: 45px 40px 40px 40px;
   border-bottom: none;
+}
+
+.verticallED {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: calc(16px + 10 * ((100vw - 320px) / 960));
+  font-weight: 300;
+  line-height: 55px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2.08px;
 }

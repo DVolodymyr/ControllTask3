@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -77,6 +78,27 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
 .btn {
   width: 188px;
   height: 75px;
@@ -111,6 +133,59 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+.header__menu {
+  display: flex;
+  flex: 0 1 42%;
+}
+
+.burger {
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+}
+
+label span {
+  position: relative;
+  display: none;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotate(45deg) translate(7px, 0px);
+}
+
+input[type=checkbox]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+input[type=checkbox]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(18px, -10px) rotate(45deg);
+}
+
 @font-face {
   font-family: ProximaNova;
   src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
@@ -173,7 +248,6 @@ body {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.96px;
-  margin-left: 60px;
   flex: 0 1 100%;
 }
 .menu__item {
@@ -194,19 +268,22 @@ body {
 
 .functional {
   color: #ffffff;
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.96px;
-  margin-right: 35px;
 }
 
 .functional > div {
-  margin-left: 70px;
+  padding: 30px 35px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  height: 80px;
 }
 
 .icon-search::before {
@@ -393,6 +470,10 @@ body {
 }
 
 .holderLogos {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   margin: 100px 0;
 }
 
@@ -403,19 +484,12 @@ body {
   z-index: 2;
   color: #1c1c1b;
   font-family: "Oswald", sans-serif;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
   font-weight: 400;
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4.8px;
-}
-
-.imgLogos {
-  position: absolute;
-  top: 50%;
-  left: 28%;
-  z-index: 2;
 }
 
 @font-face {
@@ -470,7 +544,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 6px;
   cursor: pointer;
-  margin: 0 20px 50px 20px;
+  margin: 0 20px 50px 0;
 }
 .tabs__item:active {
   text-shadow: 1px 1px 2px #6e774a;
@@ -480,12 +554,14 @@ body {
   z-index: 5;
 }
 .tabs__skeleton {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
   margin-left: 15px;
 }
 .tabs__block-desc {
   margin-top: 40px;
-  margin-right: 192px;
+  margin-right: 147px;
   flex: 0 1 50%;
 }
 .tabs__block {
@@ -528,7 +604,12 @@ body {
   margin-bottom: 40px;
 }
 .tabs__block-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   flex: 1 1 50%;
+  margin-right: 15px;
 }
 .tabs__block-img img:nth-child(even) {
   margin: 50px 0;
@@ -713,6 +794,7 @@ body {
   background-color: transparent;
   background-color: #f7f8f3;
   position: relative;
+  padding: 0 15px;
 }
 
 .accordion::before {
@@ -749,6 +831,7 @@ body {
   line-height: 40px;
   text-align: left;
   letter-spacing: 0.72px;
+  padding: 0 15px;
 }
 
 @font-face {
@@ -776,17 +859,23 @@ body {
   background: url(../images/cbd_every_day.png) no-repeat center;
   height: 100%;
   background-size: cover;
-  text-align: center;
   color: #ffffff;
+}
+
+.externalContainerED {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .everyDay-container {
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
 }
 .everyDay-container__content {
   min-width: 1175px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .rating {
@@ -799,7 +888,6 @@ body {
   font-size: 22px;
   font-weight: 300;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 4.4px;
 }
 
@@ -808,7 +896,6 @@ body {
   font-size: 24px;
   font-weight: 400;
   line-height: 75px;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 4.8px;
   position: relative;
@@ -842,6 +929,21 @@ body {
   border: 1px solid #ffffff;
   padding: 45px 40px 40px 40px;
   border-bottom: none;
+}
+
+.verticallED {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  transform: rotate(90deg);
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: calc(16px + 10 * ((100vw - 320px) / 960));
+  font-weight: 300;
+  line-height: 55px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2.08px;
 }
 
 @font-face {
@@ -886,23 +988,23 @@ body {
 .social-title::before {
   content: "";
   display: block;
-  width: 371px;
+  width: calc(50px + (200 + 100 * 0.7) * ((100vw - 320px) / 1175));
   height: 2px;
   background-color: #6e774a;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50px;
 }
 
 .social-title::after {
   content: "";
   display: block;
-  width: 371px;
+  width: calc(50px + (200 + 100 * 0.7) * ((100vw - 320px) / 1175));
   height: 2px;
   background-color: #6e774a;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 50px;
 }
 
 .social-row__columns {
@@ -910,6 +1012,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex: 1 1 100%;
+  flex-wrap: wrap;
 }
 
 .columnPolicy {
