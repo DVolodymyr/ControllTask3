@@ -22,22 +22,30 @@
   <body>
     <div class="wrapper">
       <header class="header">
-          <div class="header-container">
+        <div class="header-container">
           <nav class="header__menu">
             <div class="burger">
               <label for="check">
-                <input type="checkbox" id="check"/>
+                <input type="checkbox" id="check" />
                 <span></span>
                 <span></span>
                 <span></span>
               </label>
             </div>
-              <ul class="menu__list">
-                <li><a href="#" class="menu__item">Home</a></li>
-                <li><a href="#" class="menu__item">Products</a></li>
-                <li><a href="#" class="menu__item">FAQs</a></li>
-                <li><a href="#" class="menu__item">Contact Us</a></li>
-              </ul>
+            <ul class="menu__list">
+              <li><a data-goto=".home" href="#" class="menu__item">Home</a></li>
+              <li>
+                <a data-goto=".products" href="#" class="menu__item"
+                  >Products</a
+                >
+              </li>
+              <li><a data-goto=".faqs" href="#" class="menu__item">FAQs</a></li>
+              <li>
+                <a data-goto=".contactUs" href="#" class="menu__item"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
           </nav>
           <div class="titleWebsite">CBD</div>
           <div class="functional">
@@ -45,175 +53,241 @@
             <div class="search icon-search">Search</div>
             <div class="cart">Cart (0)</div>
           </div>
-          </div>
+        </div>
       </header>
       <main class="main">
         <div class="main-content">
-          <section class="mainPage">
+          <section class="mainPage home">
             <div class="externalContainer">
-            <div class="mainPage-container">
-              <div class="title">
-                Enhancing Life<br />
-                Excelling in Care
+              <div class="mainPage-container">
+                <div class="title">
+                  Enhancing Life<br />
+                  Excelling in Care
+                </div>
+                <div class="sub-title">Choose Wisely. Choose CBD.</div>
+                <div class="startShoping btn">
+                  <a href="#shop">Start Shopping</a>
+                </div>
+                <div>
+                  <a href="#allProduct" class="seeAll icon-Arrow-rightA">
+                    See all products</a
+                  >
+                </div>
+                <div class="verticall">CBD Potion health</div>
               </div>
-              <div class="sub-title">Choose Wisely. Choose CBD.</div>
-              <div class="startShoping btn"><a href="#shop">Start Shopping</a></div>
-              <div>
-                <a href="#allProduct" class="seeAll icon-Arrow-rightA">
-                  See all products</a
-                >
-              </div>
-              <div class="verticall">CBD Potion health</div>
-            </div>
-            <img src="images/ArrowDawn.png" alt="" class="arrowDawn">
+              <img src="images/ArrowDawn.png" alt="" class="arrowDawn" />
             </div>
           </section>
           <section class="logos">
-                <div class="logos-container">
-                  <div class="holder">
-                    <img
-                      src="images/logos/LOGOS&HOLDER.png"
-                      class="holderLogos"
-                      alt="hokder"
-                    />
-                    <div class="titleLogos">We are what we are</div>
-                    <!-- <div class="imgLogos">
-                      <img src="images/logos/Logos.png" alt="logos" />
-                    </div> -->
-                  </div>
-                </div>
+            <div class="logos-container">
+              <div class="holder">
+                <img
+                  src="images/logos/LOGOS&HOLDER.png"
+                  class="holderLogos"
+                  alt="hokder"
+                />
+                <div class="titleLogos">We are what we are</div>
+              </div>
+            </div>
           </section>
           <section class="aboutProduct">
             <div class="tabs">
               <div class="tabs-container">
                 <nav class="tabs__items">
-                  <div onclick="openTab(`whatIsCBD`)" class="tabs__item">WHAT IS CBD?</div>
-                  <div onclick="openTab(`benefits`)" class="tabs__item">BENEFITS</div>
-                  <div onclick="openTab(`ourDifference`)" class="tabs__item">OUR DIFFERENCE</div>
+                  <div onclick="openTab(`whatIsCBD`)" class="tabs__item">
+                    WHAT IS CBD?
+                  </div>
+                  <div onclick="openTab(`benefits`)" class="tabs__item">
+                    BENEFITS
+                  </div>
+                  <div onclick="openTab(`ourDifference`)" class="tabs__item">
+                    OUR DIFFERENCE
+                  </div>
                 </nav>
                 <div class="tabs__body">
                   <div id="whatIsCBD" class="tabs__block active">
-                            <div class="tabs__skeleton">
-                            <div class="tabs__block-desc">
-                              <div class="tabs__block-title">
-                                WHAT IT IS AND HOW<br> IT WORKS
-                              </div>
-                              <div class="tabs__block-text">
-                                <p>CBD is short for cannabidiol. It is a
-                                phytocannabinoid found in hemp and known for
-                                supporting the body and mind in many ways.*
-                                Charlotte’s Web products have cannabinoids with CBD
-                                extract.</p> 
-                                <p>  Not to be confused with oil from hemp seeds
-                                (which doesn’t contain cannabinoids), CBD comes from
-                                the flowers and leaves of the hemp plant.</p> 
-                                /p>  Why does CBD work? The human body has a vast network of
-                                receptors, the endocannabinoid system.</p> 
-                              </div>
-                            </div>
-                            <div class="tabs__block-img">
-                              <img src="images/small img/small_img1.png" alt="small_img1" />
-                              <img src="images/small img/small_img2.png" alt="small_img2" />
-                            </div>
-                          </div>
+                    <div class="tabs__skeleton">
+                      <div class="tabs__block-desc">
+                        <div class="tabs__block-title">
+                          WHAT IT IS AND HOW<br />
+                          IT WORKS
+                        </div>
+                        <div class="tabs__block-text">
+                          <p>
+                            CBD is short for cannabidiol. It is a
+                            phytocannabinoid found in hemp and known for
+                            supporting the body and mind in many ways.*
+                            Charlotte’s Web products have cannabinoids with CBD
+                            extract.
+                          </p>
+                          <p>
+                            Not to be confused with oil from hemp seeds (which
+                            doesn’t contain cannabinoids), CBD comes from the
+                            flowers and leaves of the hemp plant.
+                          </p>
+                          <p>
+                            Why does CBD work? The human body has a vast network
+                            of receptors, the endocannabinoid system.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tabs__block-img">
+                        <img
+                          src="images/small img/small_img1.png"
+                          alt="small_img1"
+                        />
+                        <img
+                          src="images/small img/small_img2.png"
+                          alt="small_img2"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div id="benefits" class="tabs__block">
-                            <div class="tabs__skeleton">
-                              <div class="tabs__block-desc">
-                                  <div class="tabs__block-title">
-                                BENEFITS
-                              </div>
-                              <div class="tabs__block-text">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit illum nisi id consequatur quia. Reiciendis voluptas adipisci vel nulla quisquam eum a fugit, esse voluptates! Totam adipisci corrupti placeat?</p> 
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit illum nisi id consequatur quia. Reiciendis voluptas adipisci vel nulla quisquam eum a fugit, esse voluptates! Totam adipisci corrupti placeat?</p> 
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit illum nisi id consequatur quia. Reiciendis voluptas adipisci vel nulla quisquam eum a fugit, esse voluptates! Totam adipisci corrupti placeat?</p> 
-                              </div>
-                              </div>
-                            <div class="tabs__block-img">
-                              <img src="images/small img/tabs2-1.jpg" alt="" />
-                              <img src="images/small img/tabs2-2.jpg" alt="" />
-                            </div>
-                          </div>
+                    <div class="tabs__skeleton">
+                      <div class="tabs__block-desc">
+                        <div class="tabs__block-title">BENEFITS</div>
+                        <div class="tabs__block-text">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod fugit illum nisi id consequatur quia.
+                            Reiciendis voluptas adipisci vel nulla quisquam eum
+                            a fugit, esse voluptates! Totam adipisci corrupti
+                            placeat?
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod fugit illum nisi id consequatur quia.
+                            Reiciendis voluptas adipisci vel nulla quisquam eum
+                            a fugit, esse voluptates! Totam adipisci corrupti
+                            placeat?
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod fugit illum nisi id consequatur quia.
+                            Reiciendis voluptas adipisci vel nulla quisquam eum
+                            a fugit, esse voluptates! Totam adipisci corrupti
+                            placeat?
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tabs__block-img">
+                        <img src="images/small img/tabs2-1.jpg" alt="" />
+                        <img src="images/small img/tabs2-2.jpg" alt="" />
+                      </div>
+                    </div>
                   </div>
                   <div id="ourDifference" class="tabs__block">
-                            <div class="tabs__skeleton">
-                            <div class="tabs__block-desc">
-                                  <div class="tabs__block-title">
-                                OUR DIFFERENCE
-                              </div>
-                              <div class="tabs__block-text">
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit illum nisi id consequatur quia. Reiciendis voluptas adipisci vel nulla quisquam eum a fugit, esse voluptates! Totam adipisci corrupti placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit labore voluptatem iste cum soluta praesentium, nulla facere voluptates quibusdam dolor? Ullam voluptatem sunt soluta officiis accusamus id reprehenderit consectetur autem?</p> 
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit illum nisi id consequatur quia. Reiciendis voluptas adipisci vel nulla quisquam eum a fugit, esse voluptates! Totam adipisci corrupti placeat?</p> 
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit illum nisi id consequatur quia. Reiciendis voluptas adipisci vel nulla quisquam eum a fugit, esse voluptates! Totam adipisci corrupti placeat?</p> 
-                              </div>
-                            </div>
-                            <div class="tabs__block-img">
-                              <img src="images/small img/tabs3-1.jpg" alt="" />
-                              <img src="images/small img/tabs3-2.jpg" alt="" />
-                            </div>
-                          </div>
+                    <div class="tabs__skeleton">
+                      <div class="tabs__block-desc">
+                        <div class="tabs__block-title">OUR DIFFERENCE</div>
+                        <div class="tabs__block-text">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod fugit illum nisi id consequatur quia.
+                            Reiciendis voluptas adipisci vel nulla quisquam eum
+                            a fugit, esse voluptates! Totam adipisci corrupti
+                            placeat?Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Impedit labore voluptatem iste cum
+                            soluta praesentium, nulla facere voluptates
+                            quibusdam dolor? Ullam voluptatem sunt soluta
+                            officiis accusamus id reprehenderit consectetur
+                            autem?
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod fugit illum nisi id consequatur quia.
+                            Reiciendis voluptas adipisci vel nulla quisquam eum
+                            a fugit, esse voluptates! Totam adipisci corrupti
+                            placeat?
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod fugit illum nisi id consequatur quia.
+                            Reiciendis voluptas adipisci vel nulla quisquam eum
+                            a fugit, esse voluptates! Totam adipisci corrupti
+                            placeat?
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tabs__block-img">
+                        <img src="images/small img/tabs3-1.jpg" alt="" />
+                        <img src="images/small img/tabs3-2.jpg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="shop-slider">
+          <section class="shop-slider products">
             <div class="shop-slider__container">
-                <div class="shop" id="shop">
+              <div class="shop" id="shop">
                 <div class="shop-title">CBD Featured Products</div>
                 <div class="shop-carts">
                   <div class="shop-carts__body">
-                  <div class="cart-desc one">
-                    <div class="cart-desc__title">
-                      <img src="images/stars.png" alt="" />
-                      CBD 500 mg Orange Flavor Tincture
+                    <div class="cart-desc one">
+                      <div class="cart-desc__title">
+                        <img src="images/stars.png" alt="" />
+                        CBD 500 mg Orange Flavor Tincture
+                      </div>
+                      <img
+                        src="images/products/bottle.png"
+                        alt=""
+                        class="cart-desc__img"
+                      />
                     </div>
-                      <img src="images/products/bottle.png" alt="" class="cart-desc__img"/>
-                  </div>
-                  <div class="shopPrice">
-                    <div class="shopPrice__price">$49.99 USD</div>
-                    <button class="shopPrice__btn btn">Shop</button>
-                  </div>
+                    <div class="shopPrice">
+                      <div class="shopPrice__price">$49.99 USD</div>
+                      <button class="shopPrice__btn btn">Shop</button>
+                    </div>
                   </div>
                   <div class="shop-carts__body">
-                  <div class="cart-desc two">
-                    <div class="cart-desc__title">
-                      <img src="images/stars.png" alt="" />
-                      Black ICE CBD Muscle Rub 200 mg
+                    <div class="cart-desc two">
+                      <div class="cart-desc__title">
+                        <img src="images/stars.png" alt="" />
+                        Black ICE CBD Muscle Rub 200 mg
+                      </div>
+                      <img
+                        src="images/products/box.png"
+                        alt="box"
+                        class="cart-desc__img"
+                      />
                     </div>
-                      <img src="images/products/box.png" alt="box" class="cart-desc__img"/>
+                    <div class="shopPrice">
+                      <div class="shopPrice__price">$49.99 USD</div>
+                      <button class="shopPrice__btn btn">Shop</button>
+                    </div>
                   </div>
-                  <div class="shopPrice">
-                        <div class="shopPrice__price">$49.99 USD</div>
-                        <button class="shopPrice__btn btn">Shop</button>
-                  </div>
-                  </div>
-                  <di class="shop-carts__body">
-                  <div class="cart-desc three">
-                    <div class="cart-desc__title">
+                  <div class="shop-carts__body">
+                    <div class="cart-desc three">
+                      <div class="cart-desc__title">
                         <img src="images/stars.png" alt="" />
                         CBD+Curcumin Coffee 750 mg
+                      </div>
+                      <img
+                        src="images/products/package.png"
+                        alt=""
+                        class="cart-desc__img"
+                      />
                     </div>
-                      <img src="images/products/package.png" alt="" class="cart-desc__img"/>
-                  </div>
-                  <div class="shopPrice">
-                        <div class="shopPrice__price">$79.99 USD</div>
-                        <button class="shopPrice__btn btn">Shop</button>
-                  </div>
+                    <div class="shopPrice">
+                      <div class="shopPrice__price">$79.99 USD</div>
+                      <button class="shopPrice__btn btn">Shop</button>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           </section>
-          <section class="faq">
+          <section class="faq faqs">
             <div class="faq-container">
-              <div class="faq-title">
-                Frequently asked questions
-              </div>
+              <div class="faq-title">Frequently asked questions</div>
               <button class="accordion active">
-                  <img src="./images/plus.svg" alt="plus">
+                <img src="./images/plus.svg" alt="plus" />
                 What is Cannabidiol (CBD)?
               </button>
-              <div class="panel" style="display: block;">
+              <div class="panel" style="display: block">
                 <p>
                   Because CBD from hemp has no psychoactive effects, the
                   purchase, sales, or possession of hemp CBD products are
@@ -221,10 +295,10 @@
                 </p>
               </div>
               <button class="accordion">
-                  <img src="./images/plus.svg" alt="plus">
+                <img src="./images/plus.svg" alt="plus" />
                 Is Hemp-Derived Cannabidiol (CBD) Legal?
               </button>
-              <div class="panel" style="display: none;">
+              <div class="panel" style="display: none">
                 <p>
                   Because CBD from hemp has no psychoactive effects, the
                   purchase, sales, or possession of hemp CBD products are
@@ -232,10 +306,10 @@
                 </p>
               </div>
               <button class="accordion">
-                  <img src="./images/plus.svg" alt="plus">
+                <img src="./images/plus.svg" alt="plus" />
                 Are there any negative side effects?
               </button>
-              <div class="panel" style="display: none;">
+              <div class="panel" style="display: none">
                 <p>
                   Because CBD from hemp has no psychoactive effects, the
                   purchase, sales, or possession of hemp CBD products are
@@ -243,10 +317,10 @@
                 </p>
               </div>
               <button class="accordion">
-                <img src="./images/plus.svg" alt="plus">
-                  Do you offer a return policy?
+                <img src="./images/plus.svg" alt="plus" />
+                Do you offer a return policy?
               </button>
-              <div class="panel" style="display: none;">
+              <div class="panel" style="display: none">
                 <p>
                   Because CBD from hemp has no psychoactive effects, the
                   purchase, sales, or possession of hemp CBD products are
@@ -257,30 +331,32 @@
           </section>
           <section class="everyDay">
             <div class="externalContainerED">
-            <div class="everyDay-container">
-              <div class="everyDay-container__content">
-                <div class="slide-coment">
-                  <div class="rating">
-                    <img src="images/stars.png" alt="" />
+              <div class="everyDay-container">
+                <div class="everyDay-container__content">
+                  <div class="slide-coment">
+                    <div class="rating">
+                      <img src="images/stars.png" alt="" />
+                    </div>
+                    <div class="faq-text">
+                      I have tried another product after using this one
+                      successfully,<br />
+                      and I am Back for good! The flavour, the lightness of the
+                      oil and<br />
+                      the health benefits I have gotten with this oil are
+                      amazing!
+                    </div>
+                    <div class="faq-author">Mark J.</div>
                   </div>
-                  <div class="faq-text">
-                    I have tried another product after using this one
-                    successfully,<br> and I am Back for good! The flavour, the
-                    lightness of the oil and<br> the health benefits I have gotten
-                    with this oil are amazing!
+                  <div class="faq-arrows">
+                    <div class="faq-arrow icon-Arrow-left"></div>
+                    <div class="faq-arrow icon-Arrow-rightB"></div>
                   </div>
-                  <div class="faq-author">Mark J.</div>
                 </div>
-                <div class="faq-arrows">
-                  <div class="faq-arrow icon-Arrow-left"></div>
-                  <div class="faq-arrow icon-Arrow-rightB"></div>
-                </div>
+                <div class="verticallED">CBD every day</div>
               </div>
-              <div class="verticallED">CBD every day</div>
-            </div>
             </div>
           </section>
-          <section class="social">
+          <section class="social contactUs">
             <div class="social-container">
               <div class="social-title">CBD</div>
               <div class="social-row__columns">
@@ -291,21 +367,33 @@
                 </div>
                 <div class="columnSocial">
                   <div class="socialLinks">
-                    <a href="https://www.facebook.com/" class="icon-Facebook" target="_blank"></a>
-                    <a href="https://twitter.com/" class="icon-Twitter" target="_blank"></a>
-                    <a href="https://www.youtube.com/" class="icon-YouTube" target="_blank"></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="icon-Facebook"
+                      target="_blank"
+                    ></a>
+                    <a
+                      href="https://twitter.com/"
+                      class="icon-Twitter"
+                      target="_blank"
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/"
+                      class="icon-YouTube"
+                      target="_blank"
+                    ></a>
                   </div>
                   <div class="verticallLine"></div>
                   <div class="social-subTitle">Subscribe to Newsletter</div>
                   <form action="email" class="form">
-                  <input
-                    type="text"
-                    class="email"
-                    placeholder="Email"
-                    name="email"
-                    required
-                  />
-                  <button class="EmailBtn icon-Arrow-rightB"></button>
+                    <input
+                      type="text"
+                      class="email"
+                      placeholder="Email"
+                      name="email"
+                      required
+                    />
+                    <button class="EmailBtn icon-Arrow-rightB"></button>
                   </form>
                 </div>
                 <div class="columnFeedBack">

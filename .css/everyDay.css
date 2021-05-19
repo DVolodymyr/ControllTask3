@@ -42,7 +42,7 @@
 }
 
 .everyDay-container__content {
-  min-width: 1175px;
+  max-width: 1175px;
   margin: 0 auto;
   text-align: center;
 }
