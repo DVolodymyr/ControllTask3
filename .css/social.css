@@ -39,6 +39,8 @@
   margin-top: 175px;
   margin-bottom: 65px;
   position: relative;
+  background-color: #f7f8f3;
+  z-index: 3;
 }
 
 .social-title::before {

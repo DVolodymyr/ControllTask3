@@ -1,55 +1,55 @@
 @import 'fonts.scss';
 
-.header__menu {
-  display: flex;
-  flex   : 0 1 42%
-}
-
 .burger {
-  width      : 45px;
-  height     : 45px;
-  margin-left: 20px;
-}
-
-label span {
-  position     : relative;
-  display      : none;
-  background   : #ffffff;
-  border-radius: 10px;
-  height       : 7px;
-  margin       : 7px 0;
-  transition   : .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
-
-span:nth-of-type(1) {
-  width: 50%;
-}
-
-span:nth-of-type(2) {
-  width: 100%;
-}
-
-span:nth-of-type(3) {
-  width: 75%;
-}
-
-input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked~span:nth-of-type(1) {
-  transform-origin: bottom;
-  transform       : rotate(45deg) translate(7px, 0px)
-}
+@media(max-width: 767px) {
+  .burger {
+    display : block;
+    position: relative;
+    width   : 40px;
+    height  : 30px;
+    z-index : 5;
+  }
 
-input[type="checkbox"]:checked~span:nth-of-type(2) {
-  transform-origin: top;
-  transform       : rotatez(-45deg)
-}
+  .burger::before,
+  .burger::after,
+  .burger span {
+    content         : '';
+    background-color: #fff;
+    position        : absolute;
+    width           : 100%;
+    height          : 3px;
+    left            : 0;
+    border-radius   : 10px;
+    transition      : all 0.4s ease 0s;
+    box-shadow      : 1px 1px 1px #262626;
+  }
 
+  .burger::before {
+    top: 0;
+  }
 
-input[type="checkbox"]:checked~span:nth-of-type(3) {
-  transform-origin: bottom;
-  width           : 50%;
-  transform       : translate(18px, -10px) rotate(45deg);
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger span {
+    top: 14px;
+  }
+
+  .burger.active::before {
+    transform: rotate(45deg);
+    top      : 14px;
+  }
+
+  .burger.active::after {
+    transform: rotate(-45deg);
+    bottom   : 12px;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
 }

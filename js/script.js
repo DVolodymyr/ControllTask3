@@ -1,4 +1,10 @@
 "use strict";
+//======================           BURGER           ==========================================
+$("document").ready(function () {
+  $(".burger").click(function (event) {
+    $(".burger, .menu__list").toggleClass("active");
+  });
+});
 //======================          TABS            ==========================================
 function openTab(tabName) {
   const tab = document.getElementById(tabName);
