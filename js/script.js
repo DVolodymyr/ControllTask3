@@ -53,3 +53,41 @@ if (menuLinks.length > 0) {
     }
   }
 }
+//======================           SLIDER SHOP      ==========================================
+let offset = 0;
+const shopCarts = document.querySelector(".shopCarts");
+document
+  .querySelector(".icon-Arrow-rightB")
+  .addEventListener("click", function () {
+    offset += 1284;
+    if (offset > 2568) {
+      offset = 0;
+    }
+    shopCarts.style.left = -offset + "px";
+  });
+document
+  .querySelector(".icon-Arrow-left")
+  .addEventListener("click", function () {
+    offset -= 1284;
+    if (offset < 0) {
+      offset = 2568;
+    }
+    shopCarts.style.left = -offset + "px";
+  });
+//======================           SLIDER COMENT           ==========================================
+let offsett = 0;
+const commentSlide = document.querySelector(".container__content-slider");
+document.querySelector(".coment-arrowR").addEventListener("click", function () {
+  offset += 745;
+  if (offset > 2235) {
+    offset = 0;
+  }
+  commentSlide.style.top = -offset + "px";
+});
+document.querySelector(".coment-arrowL").addEventListener("click", function () {
+  offset -= 745;
+  if (offset < 0) {
+    offset = 2235;
+  }
+  commentSlide.style.top = -offset + "px";
+});

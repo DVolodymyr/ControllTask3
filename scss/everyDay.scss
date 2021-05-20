@@ -21,9 +21,20 @@
 
   &__content {
     max-width : 1175px;
+    height    : 800px;
     margin    : 0 auto;
     text-align: center;
+    overflow  : hidden;
   }
+}
+
+.container__content-slider {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-wrap      : wrap;
+  position       : relative;
+  transition     : all ease 1.2s;
 }
 
 .rating {
@@ -31,7 +42,7 @@
   margin-bottom: 40px;
 }
 
-.faq-text {
+.coment-text {
   font-family   : $Os;
   font-size     : 22px;
   font-weight   : 300;
@@ -39,7 +50,7 @@
   letter-spacing: 4.4px;
 }
 
-.faq-author {
+.coment-author {
   font-family   : $Os;
   font-size     : 24px;
   font-weight   : 400;
@@ -50,7 +61,7 @@
   margin-bottom : 225px;
 }
 
-.faq-author::before {
+.coment-author::before {
   content         : '';
   display         : block;
   width           : 45px;
@@ -58,13 +69,14 @@
   background-color: #fff;
   position        : absolute;
   top             : 50%;
-  left            : 40%;
+  left            : 31%;
 }
 
-.faq-arrows {
+.coment-arrows {
   display        : flex;
   justify-content: center;
   align-items    : center;
+  cursor         : pointer;
 
   .icon-Arrow-left {
     display      : block;

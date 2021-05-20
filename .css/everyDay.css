@@ -43,8 +43,27 @@
 
 .everyDay-container__content {
   max-width: 1175px;
+  height: 800px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
+}
+
+.container__content-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-transition: all ease 1.2s;
+  transition: all ease 1.2s;
 }
 
 .rating {
@@ -52,7 +71,7 @@
   margin-bottom: 40px;
 }
 
-.faq-text {
+.coment-text {
   font-family: "Oswald", sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -60,7 +79,7 @@
   letter-spacing: 4.4px;
 }
 
-.faq-author {
+.coment-author {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -71,7 +90,7 @@
   margin-bottom: 225px;
 }
 
-.faq-author::before {
+.coment-author::before {
   content: '';
   display: block;
   width: 45px;
@@ -79,10 +98,10 @@
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 31%;
 }
 
-.faq-arrows {
+.coment-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,16 +111,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.faq-arrows .icon-Arrow-left {
+.coment-arrows .icon-Arrow-left {
   display: block;
   border: 1px solid #ffffff;
   padding: 45px 40px 40px 40px;
   border-bottom: none;
 }
 
-.faq-arrows .icon-Arrow-rightB {
+.coment-arrows .icon-Arrow-rightB {
   display: block;
   border: 1px solid #ffffff;
   padding: 45px 40px 40px 40px;
