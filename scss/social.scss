@@ -52,7 +52,6 @@
 }
 
 .columnPolicy {
-  color         : #6e774a;
   font-family   : $Os;
   font-size     : 14px;
   font-weight   : 300;
@@ -61,6 +60,11 @@
   text-transform: uppercase;
   letter-spacing: 3.92px;
   flex          : 1 1 33.333%;
+}
+
+.columnPolicy a {
+  color : #6e774a;
+  cursor: pointer;
 }
 
 .columnSocial {
@@ -138,6 +142,7 @@
   text-align      : center;
   padding         : 0 50px 0 60px;
   position        : relative;
+  cursor          : pointer;
 }
 
 .EmailBtn::after {
@@ -152,7 +157,6 @@
 }
 
 .columnFeedBack {
-  color         : #6e774a;
   font-family   : $Os;
   font-size     : 14px;
   font-weight   : 300;
@@ -161,4 +165,9 @@
   text-transform: uppercase;
   letter-spacing: 3.92px;
   flex          : 1 1 33.333%;
+}
+
+.columnFeedBack a {
+  color : #6e774a;
+  cursor: pointer;
 }

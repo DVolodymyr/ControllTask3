@@ -47,7 +47,7 @@
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   color: #f7f8f3;
   font-family: "Oswald", sans-serif;
-  font-size: calc(35px + 20 * ((100vw - 320px) / 960));
+  font-size: calc(35px + 20 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 75px;
   text-align: right;
@@ -59,7 +59,7 @@
 .sub-title {
   color: #f7f8f3;
   font-family: "Oswald", sans-serif;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   font-weight: 300;
   line-height: 75px;
   text-align: right;
@@ -136,7 +136,7 @@
           transform: rotate(-90deg);
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  font-size: calc(16px + 10 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 55px;
   text-align: left;

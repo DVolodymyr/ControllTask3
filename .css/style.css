@@ -288,7 +288,7 @@ body {
 @media (max-width: 767px) {
   .menu__list {
     position: fixed;
-    top: -100%;
+    top: -200%;
     right: 80px;
     width: 100%;
     height: 100%;
@@ -400,7 +400,7 @@ body {
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   color: #f7f8f3;
   font-family: "Oswald", sans-serif;
-  font-size: calc(35px + 20 * ((100vw - 320px) / 960));
+  font-size: calc(35px + 20 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 75px;
   text-align: right;
@@ -412,7 +412,7 @@ body {
 .sub-title {
   color: #f7f8f3;
   font-family: "Oswald", sans-serif;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   font-weight: 300;
   line-height: 75px;
   text-align: right;
@@ -489,7 +489,7 @@ body {
           transform: rotate(-90deg);
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  font-size: calc(16px + 10 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 55px;
   text-align: left;
@@ -562,7 +562,7 @@ body {
   z-index: 2;
   color: #1c1c1b;
   font-family: "Oswald", sans-serif;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   font-weight: 400;
   line-height: 75px;
   text-align: center;
@@ -624,7 +624,7 @@ body {
   color: #1c1c1b;
   height: 80px;
   font-family: "Oswald", sans-serif;
-  font-size: calc(15px + 10 * ((100vw - 320px) / 960));
+  font-size: calc(15px + 10 * ((100vw - 320px) / 1600));
   font-weight: 700;
   line-height: 75px;
   text-align: center;
@@ -632,6 +632,12 @@ body {
   letter-spacing: 6px;
   cursor: pointer;
   margin: 0 20px 50px 0;
+}
+
+@media (max-width: 967px) {
+  .tabs__item {
+    line-height: 45px;
+  }
 }
 
 .tabs__item:active {
@@ -658,6 +664,12 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+
+@media (max-width: 1230px) {
+  .tabs__block-desc {
+    margin-right: 80px;
+  }
 }
 
 .tabs__block {
@@ -721,6 +733,12 @@ body {
   }
 }
 
+@media (max-width: 1230px) {
+  .tabs__block-img {
+    margin-right: 20px;
+  }
+}
+
 .tabs__block-img img:nth-child(even) {
   margin: 50px 0;
 }
@@ -753,6 +771,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 .shop-title {
@@ -768,15 +787,21 @@ body {
   padding: 30px 20px;
 }
 
-.shop-carts {
+.shopCarts {
+  min-width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 20px;
+  grid-gap: 0 30px;
+  grid-auto-columns: calc(34% - 30px);
+  grid-auto-flow: column;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 .cart-desc {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,9 +860,16 @@ body {
   padding: 0 15px;
 }
 
+@media (max-width: 1230px) {
+  .cart-desc__title {
+    line-height: 35px;
+  }
+}
+
 .cart-desc__title img {
   width: 96px;
   height: 15px;
+  margin-bottom: 20px;
 }
 
 .shopPrice {
@@ -868,6 +900,12 @@ body {
   margin-left: 30px;
 }
 
+@media (max-width: 1230px) {
+  .shopPrice__price {
+    line-height: 25px;
+  }
+}
+
 .shopPrice__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,6 +930,30 @@ body {
   position: absolute;
   top: 50%;
   right: 15px;
+}
+
+.arrows {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  color: #6e774a;
+  margin-right: 30px;
+}
+
+.arrowRight {
+  color: #6e774a;
+  margin-left: 30px;
 }
 
 @font-face {
@@ -1042,8 +1104,27 @@ body {
 
 .everyDay-container__content {
   max-width: 1175px;
+  height: 800px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
+}
+
+.container__content-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-transition: all ease 1.2s;
+  transition: all ease 1.2s;
 }
 
 .rating {
@@ -1051,7 +1132,7 @@ body {
   margin-bottom: 40px;
 }
 
-.faq-text {
+.coment-text {
   font-family: "Oswald", sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -1059,7 +1140,7 @@ body {
   letter-spacing: 4.4px;
 }
 
-.faq-author {
+.coment-author {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -1070,7 +1151,7 @@ body {
   margin-bottom: 225px;
 }
 
-.faq-author::before {
+.coment-author::before {
   content: '';
   display: block;
   width: 45px;
@@ -1078,10 +1159,10 @@ body {
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 31%;
 }
 
-.faq-arrows {
+.coment-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,16 +1172,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.faq-arrows .icon-Arrow-left {
+.coment-arrows .icon-Arrow-left {
   display: block;
   border: 1px solid #ffffff;
   padding: 45px 40px 40px 40px;
   border-bottom: none;
 }
 
-.faq-arrows .icon-Arrow-rightB {
+.coment-arrows .icon-Arrow-rightB {
   display: block;
   border: 1px solid #ffffff;
   padding: 45px 40px 40px 40px;
@@ -1115,7 +1197,7 @@ body {
           transform: rotate(90deg);
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  font-size: calc(16px + 10 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
   font-weight: 300;
   line-height: 55px;
   text-align: left;
@@ -1206,7 +1288,6 @@ body {
 }
 
 .columnPolicy {
-  color: #6e774a;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1217,6 +1298,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
+}
+
+.columnPolicy a {
+  color: #6e774a;
+  cursor: pointer;
 }
 
 .columnSocial {
@@ -1316,6 +1402,7 @@ body {
   text-align: center;
   padding: 0 50px 0 60px;
   position: relative;
+  cursor: pointer;
 }
 
 .EmailBtn::after {
@@ -1330,7 +1417,6 @@ body {
 }
 
 .columnFeedBack {
-  color: #6e774a;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1341,6 +1427,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
+}
+
+.columnFeedBack a {
+  color: #6e774a;
+  cursor: pointer;
 }
 
 @font-face {

@@ -116,9 +116,16 @@
   padding: 0 15px;
 }
 
+@media (max-width: 1230px) {
+  .cart-desc__title {
+    line-height: 35px;
+  }
+}
+
 .cart-desc__title img {
   width: 96px;
   height: 15px;
+  margin-bottom: 20px;
 }
 
 .shopPrice {
@@ -147,6 +154,12 @@
   text-transform: uppercase;
   letter-spacing: 2.7px;
   margin-left: 30px;
+}
+
+@media (max-width: 1230px) {
+  .shopPrice__price {
+    line-height: 25px;
+  }
 }
 
 .shopPrice__btn {
