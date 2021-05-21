@@ -276,6 +276,11 @@ body {
     margin-right: 48px;
   }
 }
+@media (min-width: 800px) and (max-width: 870px) {
+  .menu__item {
+    margin-right: 28px;
+  }
+}
 @media (max-width: 800px) {
   .menu__list {
     position: fixed;
