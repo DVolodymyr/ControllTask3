@@ -103,10 +103,15 @@
 }
 
 .verticall {
-  position : absolute;
-  bottom   : 100px;
-  left     : -60px;
-  transform: rotate(-90deg);
+  position  : absolute;
+  bottom    : 100px;
+  left      : -60px;
+  transform : rotate(-90deg);
+  transition: all ease 0.75s;
+
+  @media(max-width: 600px) {
+    left: -120px;
+  }
 
   color      : #ffffff;
   font-family: $Os;
@@ -128,7 +133,8 @@
   }
 }
 
-.arrowDawn {
-
+.arrow-Dawn {
+  cursor       : pointer;
   margin-bottom: 60px;
+  transition   : all ease 1.5s;
 }

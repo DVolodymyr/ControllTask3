@@ -3,12 +3,18 @@
 .header {
   background     : url(../images/header-shadow.png)no-repeat center;
   background-size: cover;
+  backdrop-filter: blur(10px);
   position       : fixed;
   width          : 100%;
   min-height     : 80px;
   z-index        : 50;
   align-items    : center;
   text-align     : center;
+  margin         : 0 auto;
+
+  @media(max-width: 800px) {
+    text-shadow: 2px 2px 2px #000;
+  }
 }
 
 .header::before {
@@ -21,24 +27,30 @@
   position        : absolute;
   top             : 80px;
   left            : 0;
+
+  @media(max-width: 800px) {
+    top: 168px;
+  }
 }
 
 .header-container {
-  max-width: 1920px;
-  margin   : 0 auto;
-  margin   : 0 auto;
-  padding  : 0 10px;
+  margin : 0 auto;
+  padding: 0 10px;
 }
 
 .header-body {
-  min-height     : 80px;
+  // min-height     : 80px;
   display        : flex;
   justify-content: space-around;
   align-items    : center;
+
+  @media(max-width: 800px) {
+    flex-wrap: wrap;
+  }
 }
 
 .menu {
-  @media(min-width:767px) {
+  @media(min-width:800px) {
     &__list {
       display       : flex;
       font-family   : $Os;
@@ -49,7 +61,6 @@
       text-transform: uppercase;
       letter-spacing: 0.96px;
       flex          : 0 1 42%;
-
     }
 
     &__item {
@@ -58,13 +69,11 @@
     }
   }
 
-  @media(max-width: 767px) {
-
-
+  @media(max-width: 800px) {
     &__list {
       position       : fixed;
       top            : -200%;
-      right          : 0;
+      left           : 0;
       width          : 100%;
       height         : 100%;
       backdrop-filter: blur(5px);
@@ -98,7 +107,15 @@
   line-height   : 55px;
   text-align    : center;
   text-transform: uppercase;
-  margin        : 0 50px;
+  margin        : 0 30px;
+
+
+  @media(max-width: 800px) {
+    flex     : 55%;
+    font-size: 75px;
+    position : relative;
+    left     : -60px;
+  }
 }
 
 .functional {
@@ -114,12 +131,27 @@
   text-align    : center;
   text-transform: uppercase;
   letter-spacing: 0.96px;
+
+  @media(max-width: 800px) {
+    flex     : 100%;
+    font-size: 20px;
+  }
+}
+
+.functional a {
+  color: #ffffff;
+
 }
 
 .functional>div {
   padding    : 30px 35px;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   height     : 80px;
+
+  @media(max-width: 800px) {
+    border-left: none;
+    text-align : center;
+  }
 }
 
 .icon-search::before {

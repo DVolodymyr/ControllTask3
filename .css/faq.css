@@ -109,5 +109,9 @@
   line-height: 40px;
   text-align: left;
   letter-spacing: 0.72px;
-  margin-left: 50px;
+  margin-left: 65px;
+}
+
+.panel p {
+  padding-bottom: 45px;
 }

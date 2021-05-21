@@ -12,3 +12,8 @@
 @import "everyDay.scss";
 @import "social.scss";
 @import "footer.scss";
+
+.wrapper {
+  max-width: 1920px;
+  margin   : 0 auto;
+}

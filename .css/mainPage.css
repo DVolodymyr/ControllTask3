@@ -134,6 +134,8 @@
   left: -60px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  -webkit-transition: all ease 0.75s;
+  transition: all ease 0.75s;
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
@@ -142,6 +144,12 @@
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2.08px;
+}
+
+@media (max-width: 600px) {
+  .verticall {
+    left: -120px;
+  }
 }
 
 .verticall::before {
@@ -154,6 +162,9 @@
   background-color: #f7f8f3;
 }
 
-.arrowDawn {
+.arrow-Dawn {
+  cursor: pointer;
   margin-bottom: 60px;
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
 }

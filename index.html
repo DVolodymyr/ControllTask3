@@ -47,9 +47,9 @@
             </nav>
             <div class="titleWebsite">CBD</div>
             <div class="functional">
-              <div class="login">login</div>
-              <div class="search icon-search">Search</div>
-              <div class="cart">Cart (0)</div>
+              <div class="login"><a href="#">login</a></div>
+              <div class="search icon-search"><a href="#">Search</a></div>
+              <div class="cart"><a href="#">Cart (0)</a></div>
             </div>
           </div>
         </div>
@@ -74,10 +74,18 @@
                 </div>
                 <div class="verticall">CBD Potion health</div>
               </div>
-              <img src="images/ArrowDawn.png" alt="" class="arrowDawn" />
+              <div id="arrowDawn">
+                <a href="#weAre" class="scroll-to">
+                  <img
+                    src="images/ArrowDawn.png"
+                    alt="arrow-dawn"
+                    class="arrow-Dawn"
+                  />
+                </a>
+              </div>
             </div>
           </section>
-          <section class="logos">
+          <section class="logos" id="weAre">
             <div class="logos-container">
               <div class="holder">
                 <img
@@ -581,7 +589,11 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>

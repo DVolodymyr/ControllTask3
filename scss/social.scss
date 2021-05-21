@@ -48,10 +48,14 @@
   justify-content: space-around;
   align-items    : center;
   flex           : 1 1 100%;
-  flex-wrap      : wrap;
+
+  @media(max-width: 850px) {
+    flex-direction: column;
+  }
 }
 
 .columnPolicy {
+  width         : 100%;
   font-family   : $Os;
   font-size     : 14px;
   font-weight   : 300;
@@ -60,11 +64,33 @@
   text-transform: uppercase;
   letter-spacing: 3.92px;
   flex          : 1 1 33.333%;
+
+  @media(max-width: 850px) {
+    margin-bottom: 30px;
+  }
 }
 
 .columnPolicy a {
-  color : #6e774a;
-  cursor: pointer;
+  display : block;
+  color   : #6e774a;
+  cursor  : pointer;
+  position: relative;
+}
+
+.columnPolicy a::after {
+  display         : block;
+  content         : "";
+  background-color: #1c1c1b;
+  height          : 2px;
+  width           : 0%;
+  left            : 50%;
+  position        : absolute;
+  transition      : width .3s ease-in-out;
+  transform       : translateX(-50%);
+}
+
+.columnPolicy a:hover:after {
+  width: 60%;
 }
 
 .columnSocial {
@@ -165,9 +191,32 @@
   text-transform: uppercase;
   letter-spacing: 3.92px;
   flex          : 1 1 33.333%;
+
+  @media(max-width: 850px) {
+    margin-top: 30px;
+
+  }
 }
 
 .columnFeedBack a {
-  color : #6e774a;
-  cursor: pointer;
+  display : block;
+  color   : #6e774a;
+  cursor  : pointer;
+  position: relative;
+}
+
+.columnFeedBack a::after {
+  display         : block;
+  content         : "";
+  background-color: #1c1c1b;
+  height          : 2px;
+  width           : 0%;
+  left            : 50%;
+  position        : absolute;
+  transition      : width .3s ease-in-out;
+  transform       : translateX(-50%);
+}
+
+.columnFeedBack a:hover:after {
+  width: 60%;
 }

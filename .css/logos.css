@@ -57,3 +57,39 @@
   text-transform: uppercase;
   letter-spacing: 4.8px;
 }
+
+@media (max-width: 797px) {
+  .titleLogos {
+    left: 35%;
+  }
+}
+
+@media (max-width: 690px) {
+  .titleLogos {
+    left: 32%;
+  }
+}
+
+@media (max-width: 600px) {
+  .titleLogos {
+    left: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .titleLogos {
+    left: 28%;
+  }
+}
+
+@media (max-width: 400px) {
+  .titleLogos {
+    left: 23%;
+  }
+}
+
+@media (max-width: 320px) {
+  .titleLogos {
+    left: 15%;
+  }
+}

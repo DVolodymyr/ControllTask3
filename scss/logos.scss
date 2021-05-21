@@ -33,4 +33,28 @@
   text-align    : center;
   text-transform: uppercase;
   letter-spacing: 4.8px;
+
+  @media(max-width: 797px) {
+    left: 35%;
+  }
+
+  @media(max-width: 690px) {
+    left: 32%;
+  }
+
+  @media(max-width: 600px) {
+    left: 30%;
+  }
+
+  @media(max-width: 500px) {
+    left: 28%;
+  }
+
+  @media(max-width: 400px) {
+    left: 23%;
+  }
+
+  @media(max-width: 320px) {
+    left: 15%;
+  }
 }

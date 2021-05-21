@@ -44,7 +44,6 @@
 }
 
 .shopCarts {
-  min-width: 100%;
   display: -ms-grid;
   display: grid;
   grid-gap: 0 30px;
@@ -159,6 +158,7 @@
 @media (max-width: 1230px) {
   .shopPrice__price {
     line-height: 25px;
+    margin-left: 15px;
   }
 }
 
@@ -177,6 +177,13 @@
   position: relative;
 }
 
+@media (max-width: 675px) {
+  .shopPrice__btn {
+    padding-right: 35px;
+    padding-left: 15px;
+  }
+}
+
 .shopPrice__btn::before {
   content: '';
   display: block;
@@ -186,6 +193,12 @@
   position: absolute;
   top: 50%;
   right: 15px;
+}
+
+@media (max-width: 675px) {
+  .shopPrice__btn::before {
+    width: 20px;
+  }
 }
 
 .arrows {

@@ -70,6 +70,24 @@
   margin: 0 20px 50px 0;
 }
 
+@media (max-width: 880px) {
+  .tabs__item {
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 780px) {
+  .tabs__item {
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 621px) {
+  .tabs__item {
+    margin: 0 20px -35px 0;
+  }
+}
+
 .tabs__item:active {
   text-shadow: 1px 1px 2px #6e774a;
 }
@@ -77,6 +95,14 @@
 .tabs__item:hover {
   border-bottom: 2px solid #1c1c1b;
   z-index: 5;
+}
+
+@media (max-width: 621px) {
+  .tabs__item:hover {
+    border-bottom: none;
+    border-left: 5px solid #1c1c1b;
+    border-right: 5px solid #1c1c1b;
+  }
 }
 
 .tabs__skeleton {

@@ -28,6 +28,20 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+//======================      SMOOTH SCROLL ARROW       ==========================================
+
+$("a.scroll-to").on("click", function (e) {
+  e.preventDefault();
+  let anchor = $(this).attr("href");
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $(anchor).offset().top,
+      },
+      800
+    );
+});
 //======================          SMOOTH SCROLL            ==========================================
 const menuLinks = document.querySelectorAll(".menu__item[data-goto]");
 if (menuLinks.length > 0) {
@@ -74,6 +88,7 @@ document
     }
     shopCarts.style.left = -offset + "px";
   });
+
 //======================           SLIDER COMENT           ==========================================
 let offsett = 0;
 const commentSlide = document.querySelector(".container__content-slider");
