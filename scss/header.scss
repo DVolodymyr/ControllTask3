@@ -50,6 +50,7 @@
 }
 
 .menu {
+
   @media(min-width:800px) {
     &__list {
       display       : flex;
@@ -66,7 +67,12 @@
     &__item {
       color       : #ffffff;
       margin-right: 48px;
+
+      @media(max-width: 870px) {
+        margin-right: 28px;
+      }
     }
+
   }
 
   @media(max-width: 800px) {
