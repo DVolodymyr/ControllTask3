@@ -288,11 +288,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
     padding: 85px 0 0 0;
     text-shadow: 2px 2px 2px #000;
     transition: all 0.5s ease 0s;
     overflow: auto;
+    backdrop-filter: blur(5px);
   }
   .menu__list li {
     margin-bottom: 50px;
@@ -302,7 +302,9 @@ body {
     color: #ffffff;
   }
   .menu__list.active {
-    top: 0;
+    top: 169px;
+    height: 500px;
+    background-color: rgba(51, 51, 51, 0.8);
   }
 }
 
@@ -353,6 +355,11 @@ body {
   padding: 30px 35px;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   height: 80px;
+}
+@media (max-width: 420px) {
+  .functional > div {
+    padding: 30px 20px;
+  }
 }
 @media (max-width: 800px) {
   .functional > div {
@@ -635,6 +642,21 @@ body {
   display: flex;
   position: relative;
 }
+@media (max-width: 1320px) {
+  .tabs__items {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1170px) {
+  .tabs__items {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1170px) {
+  .tabs__items {
+    padding-left: 20px;
+  }
+}
 @media (max-width: 690px) {
   .tabs__items {
     display: block;
@@ -667,6 +689,7 @@ body {
 }
 @media (max-width: 880px) {
   .tabs__item {
+    margin: 0 20px 20px 0;
     line-height: 35px;
   }
 }
@@ -705,9 +728,27 @@ body {
   margin-right: 147px;
   flex: 0 1 50%;
 }
+@media (max-width: 1320px) {
+  .tabs__block-desc {
+    padding-left: 30px;
+    margin-right: 120px;
+  }
+}
 @media (max-width: 1230px) {
   .tabs__block-desc {
+    padding-left: 20px;
     margin-right: 80px;
+  }
+}
+@media (max-width: 1170px) {
+  .tabs__block-desc {
+    margin-left: 40px;
+    margin-right: 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .tabs__block-desc {
+    margin-right: 40px;
   }
 }
 .tabs__block {
@@ -754,16 +795,16 @@ body {
   max-height: 100%;
   object-fit: cover;
   object-position: center;
-  margin-right: 30px;
-}
-@media (max-width: 1585px) {
-  .tabs__block-img {
-    margin: 20px;
-  }
+  padding-right: 30px;
 }
 @media (max-width: 1230px) {
   .tabs__block-img {
-    margin-right: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .tabs__block-img {
+    padding-right: 15px;
   }
 }
 .tabs__block-img img:nth-child(even) {
